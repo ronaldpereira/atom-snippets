@@ -1,0 +1,80 @@
+'.source.c':
+    'main()':
+        'prefix': 'main'
+        'body': 'int main(int argc, char* argv[])\n{\n\t${1:/* code */}\n\n\treturn 0;\n}'
+
+    'for()':
+        'prefix': 'for'
+        'body': 'for(${1:i} = ${2:value}; ${3:condition}; ${1:i}++)\n{\n\t${4:/* code */}\n}'
+
+    'while()':
+        'prefix': 'while'
+        'body': 'while(${1:condition})\n{\n\t${2:/* code */}\n}'
+
+    '#include':
+        'prefix': 'include'
+        'body': '#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\n\n'
+
+    'any function':
+        'prefix': 'func'
+        'body': '${1:int} ${2:name}(${3:/* arguments */})\n{\n\t${4:/* code */}\n\n\treturn ${5:0};\n}'
+
+    'void function':
+      'prefix': 'void'
+      'body': 'void ${1:name}(${2:/* arguments */})\n{\n\t${3:/* code */}\n}'
+
+    'if condition':
+        'prefix': 'if'
+        'body': 'if(${1:condition})\n{\n\t${2:/* code */}\n}'
+
+    'fgets':
+        'prefix': 'fgets'
+        'body': 'fgets(${1:string}, ${2:size}, stdin);'
+
+    'malloc()':
+        'prefix': 'malloc'
+        'body': '${1:var} = (${2:int}*) malloc(${3:size}*sizeof(${2:int}));'
+
+    'calloc()':
+        'prefix': 'calloc'
+        'body': '${1:var} = (${2:int}*) calloc(${3:size},sizeof(${2:int}));'
+
+    'free()':
+        'prefix': 'free'
+        'body': 'free(${1:var});'
+
+    'strcpy()':
+        'prefix': 'strcpy'
+        'body': 'strcpy(${1:destination}, ${2:origin});'
+
+    'strtok()':
+      'prefix': 'strtok'
+      'body': 'strtok(${1:string}, ${2:delimitador})'
+
+    'strcmp()':
+        'prefix': 'strcmp'
+        'body': 'strcmp(${1:str_1}, ${2:str_2})'
+
+    'fopen()':
+        'prefix': 'fopen'
+        'body': '${1:var} = fopen(${2:argv[1]}, "${3:w+r}");'
+
+    'fclose()':
+        'prefix': 'fclose'
+        'body': 'fclose(${1:var});'
+
+    '#ifndef':
+        'prefix': 'ifndef'
+        'body': '#ifndef ${1:.h name}\n#define ${1:.h name}\n\n${2:/* data structure */}\n\n${3:/* functions */}\n\n#endif'
+
+    'struct':
+        'prefix': 'struct'
+        'body': 'struct ${1:name}\n{\n\t${2:/* variables */}\n} ${1:name};'
+
+    'fscanf()':
+        'prefix': 'fscanf'
+        'body': 'fscanf(${1:stdin}, "${2:%d}", ${3:&var});'
+
+    'scanf()':
+        'prefix': 'scanf'
+        'body': 'scanf("${1:%d}", &${2:var});'
