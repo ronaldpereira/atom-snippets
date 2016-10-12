@@ -49,11 +49,11 @@
 
     'strtok()':
       'prefix': 'strtok'
-      'body': 'strtok(${1:string}, ${2:delimitador})'
+      'body': '${1:var} = strtok(${2:string}, "${3:delimitador}");'
 
     'strcmp()':
         'prefix': 'strcmp'
-        'body': 'strcmp(${1:str_1}, ${2:str_2})'
+        'body': 'strcmp(${1:str_1}, ${2:str_2}) == 0'
 
     'fopen()':
         'prefix': 'fopen'
@@ -65,7 +65,7 @@
 
     '#ifndef':
         'prefix': 'ifndef'
-        'body': '#ifndef ${1:.h name}\n#define ${1:.h name}\n\n${2:/* data structure */}\n\n${3:/* functions */}\n\n#endif'
+        'body': '#ifndef ${1:.H NAME}\n#define ${1:.H NAME}\n\n${2:/* data structure */}\n\n${3:/* functions */}\n\n#endif'
 
     'struct':
         'prefix': 'struct'
