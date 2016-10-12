@@ -13,5 +13,5 @@ Copy the entire content of my file and paste it into the atom snippets file
 Save the snippets file
 Enjoy it :)
 
-Any doubts on needing help?
+Any doubts or needing help?
 Email me on ronald.drp11@gmail.com
