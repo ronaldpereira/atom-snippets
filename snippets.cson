@@ -83,3 +83,12 @@
     'DOCTYPE':
         'prefix': 'doctype'
         'body': '<!DOCTYPE html>\n\n<html>\n\t${1:/* Insert code here */}\n</html'
+
+'.source.java':
+    'printline':
+        'prefix': 'sout'
+        'body': 'System.out.println(${1:var});'
+
+    'throws Exception':
+        'prefix': 'throws'
+        'body': 'throws Exception'
