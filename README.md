@@ -1,8 +1,8 @@
-# My onw Atom Editor Snippets
+# My own Atom Editor Snippets
 
 Author: Ronald Pereira (https://github.com/ronaldpereira/atom-snippets)
 
-The file above contains my most used functions in C language and it's auto completions on Atom Text Editor.
+The file above contains my most used functions in C language, HTML and others. It works as auto completions on Atom Text Editor.
 
 You can download Atom in this link (https://atom.io/)
 
