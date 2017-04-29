@@ -39,6 +39,10 @@
         'prefix': 'calloc'
         'body': '${1:var} = (${2:int}*) calloc(${3:size},sizeof(${2:int}));'
 
+    'realloc()':
+        'prefix': 'realloc'
+        'body': '${1:var} = (${2:int}*) realloc(${1:var}, ${3:size}*sizeof(${2:int}));'
+
     'free()':
         'prefix': 'free'
         'body': 'free(${1:var});'
