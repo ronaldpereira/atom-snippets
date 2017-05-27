@@ -1,4 +1,8 @@
 '.source.c':
+    'init':
+        'prefix': 'init'
+        'body': '#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\n\nint main(int argc, char* argv[])\n{\n\t${1:/* code */}\n\n\treturn 0;\n}'
+
     'main()':
         'prefix': 'main'
         'body': 'int main(int argc, char* argv[])\n{\n\t${1:/* code */}\n\n\treturn 0;\n}'
