@@ -1,11 +1,11 @@
 '.source.c':
-    'init':
+    'initC':
         'prefix': 'init'
-        'body': '#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\n\nint main(int argc, char* argv[])\n{\n\t${1:/* code */}\n\n\treturn 0;\n}'
+        'body': '#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\n\nint main(int argc, char *argv[])\n{\n\t${1:/* code */}\n\n\treturn 0;\n}'
 
     'main()':
         'prefix': 'main'
-        'body': 'int main(int argc, char* argv[])\n{\n\t${1:/* code */}\n\n\treturn 0;\n}'
+        'body': 'int main(int argc, char *argv[])\n{\n\t${1:/* code */}\n\n\treturn 0;\n}'
 
     'for()':
         'prefix': 'for'
@@ -88,11 +88,15 @@
         'body': 'scanf("${1:%d}", &${2:var});'
 
 '.text.html':
-    'DOCTYPE':
-        'prefix': 'doctype'
+    'initHTML':
+        'prefix': 'init'
         'body': '<!DOCTYPE html>\n\n<html>\n\t${1:/* Insert code here */}\n</html'
 
 '.source.java':
+    'initJava':
+        'prefix': 'init'
+        'body' : 'public class ${1:FileName}\n{\n\tpublic static void main(String[] args)\n\t{\n\t\t/* code */\n\t}\n}'
+
     'printline':
         'prefix': 'sout'
         'body': 'System.out.println(${1:var});'
