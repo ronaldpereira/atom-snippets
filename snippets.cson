@@ -90,7 +90,7 @@
 '.text.html':
     'initHTML':
         'prefix': 'init'
-        'body': '<!DOCTYPE html>\n\n<html>\n\t${1:/* Insert code here */}\n</html'
+        'body': '<!DOCTYPE html>\n\n<html>\n\t${1:/* Insert code here */}\n</html>'
 
 '.source.java':
     'initJava':
